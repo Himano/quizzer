@@ -4,6 +4,9 @@ const quiz = document.querySelector(".quiz");
 const country = document.querySelector(".country");
 const right = document.querySelector(".right");
 const wrong = document.querySelector(".wrong");
+const highscores = document.querySelector(".highscores");
+
+let hs1 = document.querySelector(".hs1")
 
 let a1 =  "";
 let a2 = "";
@@ -107,7 +110,23 @@ function gameType(category) {
 
 
     } else {
-        alert("Game is over your score is xxx")
+        console.log(success)
+        let theScore = String(success)
+        console.log(theScore)
+        localStorage.setItem("score", theScore)
+
+       let test =  JSON.parse(window.localStorage.getItem('score'));
+       console.log(test)
+
+       hs1.innerHTML = test;
+
+        quiz.setAttribute("id", "hidden")
+        highscores.removeAttribute("id", "hidden")
+
+
+
+
+        
     }
     
     
