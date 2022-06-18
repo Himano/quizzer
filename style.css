@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto,sans-serif;
+}
+
+#hidden {
+    display: none;
+}
+
+.x {
+    text-decoration: line-through;
+    background-color: grey;
+    box-shadow: 2px 2px black;
+}
+
+.a {
+    background-color: grey;
+    box-shadow: 2px 2px black;
+    color: white;
+
+}
+
+.game-container {
+    background-color: rgb(117, 159, 173);
+    height: 100vh;
+    width: 100vw;
+ 
+}
+
+.startMenu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.frontBtn {
+    height: 70px;
+    width: 80%;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.highScore{
+    margin-top: 20px;
+}
+
+.startGame {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(112, 149, 112);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.startGame button{
+    width: 80%;
+    height: 65px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.quiz {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(179, 170, 201);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.question {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.answers {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.alt{
+    width: 90%;
+    height: 20%;
+    margin: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.text {
+    height: 60%;
+    width: 90%;
+    border-radius: 10px;
+    background-color: white;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    
+
+}
+
+.riddleMeThis{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.score {
+    position: absolute;
+    top: 0;
+    background-color: rgb(191, 176, 230);
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.cwrong {
+    float: left;
+    margin-left: 10px;
+}
+
+.cright {
+    float: right;
+    margin-right: 10px;
+}
+

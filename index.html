@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quizzy</title>
+</head>
+<body>
+
+    <div class="game-container">
+
+        <div class="startMenu">
+            <button class="start frontBtn" onClick="startGameFunction()">Start</button>
+        <button class="highScore frontBtn">Highscore</button>
+
+        </div>
+
+        <div class="startGame" id="hidden">
+
+            <button onClick="gameType()" class="world a">World</button>
+            <button onClick="gameType()" class="europe x">Europe</button>
+            <button onClick="gameType()" class="asia x">Asia</button>
+            <button onClick="gameType()" class="america x">America</button>
+            <button onClick="gameType()" class="southAmerica x">South America</button>
+            <button onClick="gameType()" class="oceania x">Oceania</button>
+            <button onClick="gameType()" class="africa x">Africa</button>
+
+
+        </div>
+
+        <div class="quiz" id="hidden">
+
+             <div class="question">
+                <div class="score">
+                   <p class="cwrong">Wrong: <span class="wrong">0</span></p> 
+                   <p class="cright"> Right: <span class="right">0</span></p>
+                </div>
+                <div class="text">
+                    <p class="riddleMeThis">
+                        What is the capitol of <br> <span class="country">the United States?</span>
+                    </p>
+                </div>
+             </div>
+
+             <div class="answers">
+
+                <button onClick="checkAns()" class="alt ">Alternative 1</button>
+                <button onClick="checkAns()" class="alt ">Alternative 2</button>
+                <button onClick="checkAns()" class="alt ">Alternative 3</button>
+                <button onClick="checkAns()" class="alt ">Alternative 4</button>
+
+
+             </div>
+
+        </div>
+
+
+        
+    </div>
+
+
+    <script src="list.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
