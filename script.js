@@ -14,6 +14,10 @@ let correct = "";
 let success = 0;
 let fail = 0;
 
+let w1 ="";
+let w2 ="";
+let w3 ="";
+
 
 
 
@@ -69,32 +73,30 @@ function gameType(category) {
         startGame.setAttribute("id", "hidden")
         quiz.removeAttribute("id", "hidden")
         
-        let w1 ="";
-        let w2 ="";
-        let w3 ="";
+        
     
         let item = list[Math.floor(Math.random()*list.length)];
         country.innerHTML = item.country;
         correct = item.city;
-        console.log(correct)
+       
     
     
-        let wrong1 = list[Math.floor(Math.random()*list.length)];
+        let wrong1 = list[Math.floor(Math.random()*list.length - 1)];
         w1 = wrong1.city
     
-        let wrong2 =list[Math.floor(Math.random()*list.length)];
+        let wrong2 =list[Math.floor(Math.random()*list.length -1)];
         w2 = wrong2.city
     
-        let wrong3 =list[Math.floor(Math.random()*list.length)];
+        let wrong3 =list[Math.floor(Math.random()*list.length -1)];
         w3 = wrong3.city
+
     
         a1.innerHTML = correct;
         a2.innerHTML = w1;
         a3.innerHTML = w2;
         a4.innerHTML = w3;
 
-        console.log(fail)
-        console.log(success)
+
 
 
         var changeUp = document.getElementsByClassName("alt")
@@ -117,12 +119,12 @@ function checkAns(){
     var target = event.target || event.srcElement;
     
     if (target.innerHTML === correct) {
-        console.log("Correct!")
+       
         success = success + 1;
-        console.log(success)
+       
 
     }else {
-        console.log("Wrong!")
+      
         fail = fail + 1;
     }
 
